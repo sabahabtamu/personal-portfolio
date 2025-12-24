@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saba Habtamu | Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hello, I am <br />Saba Habtamu</h1>
+          <p>Software Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About  -->
+    <section id="about">
+      <div class="container">
+        <div class="about-me">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            A dedicated Full Stack Web Developer specializing in the MERN stack,
+            I bridge frontend aesthetics with robust backend functionality to
+            build seamless user experiences.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/education.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h2>Education</h2>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('aau')">
+                Addis Ababa University<br /><span>2023 - Present</span>
+              </p>
+              <p class="tab-links" onclick="opentab('t4d')">
+                Women Techsters Bootcamp<br /><span>04/2025 – 05/2025</span>
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="aau">
+              <ul>
+                <li>Completed Database Management System</li>
+                <li>
+                  Learned fundamental concepts of Networking, AI and
+                  Cybersecurity
+                </li>
+                <li>Strong foundation in software development lifecycle</li>
+                <li>Experience with web technologies</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="t4d">
+              <ul>
+                <li>
+                  Women Techsters Fellowship – Immersive Software Development
+                  Track
+                </li>
+                <li>
+                  Intensive 3-week project-based training in modern web
+                  development
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h2>Technologies</h2>
+          <div class="grid">
+            <div class="tech">
+              <img src="images/Python.png" alt="python icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/HTML5.png" alt="html icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/CSS3.png" alt="css icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/JavaScript.png" alt="javascript icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/React.png" alt="React icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/Node.js.png" alt="Node icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/Express.png" alt="express icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/Tailwind CSS.png" alt="Tailwindcss icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/Git.png" alt="Git icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/GitHub.png" alt="GitHub icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/MySQL.png" alt="MySQL icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/MongoDB.png" alt="MongoDB icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/TypeScript.png" alt="TypeScript icon" />
+            </div>
+
+            <div class="tech">
+              <img src="images/Bootstrap.png" alt="Bootstrap icon" />
+            </div>
+          </div>
+
+          <div class="div-container">
+            <div class="container-center">
+              <div class="relative-wrapper">
+                <div class="beam-effect"></div>
+                <div class="blur-background"></div>
+                <div class="gradient-circle">
+                  <img src="images/logo.png" alt="Logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects-->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="pr-desc">
+            <h3>Full-Stack Food Delivery Platform</h3>
+            <div>
+              <p>
+                A complete food ordering system featuring separate applications
+                for customers and administrators. This full-stack project
+                demonstrates the ability to build a functional product with
+                distinct user roles, interfaces, and a shared backend API.<br />
+                <strong>MERN stack</strong>
+              </p>
+            </div>
+          </div>
+          <div class="pr-container">
+            <a
+              href="https://food-delivery-frontend-rdm6.onrender.com/"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="project-image-wrapper">
+                <img src="images/food-del.png" alt="Food delivery" />
+                <div class="project-overlay">
+                  <span class="project-overlay-icon">↗</span>
+                  <span class="project-overlay-text">View project</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="pr-container">
+            <a
+              href="https://green-cart-three-black.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="project-image-wrapper">
+                <img src="images/green.png" alt="green cart" />
+                <div class="project-overlay">
+                  <span class="project-overlay-icon">↗</span>
+                  <span class="project-overlay-text">View project</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="pr-desc glass-card">
+            <h3>Modern Grocery Delivery Platform</h3>
+            <div>
+              <p>
+                A responsive grocery e-commerce application built as a single,
+                unified React application. It features a public storefront for
+                customers and a secure, authentication-protected admin
+                dashboard—all within the same codebase, demonstrating efficient
+                routing and state management.<br />
+                <strong>MERN stack</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="pr-desc glass-card">
+            <h3>AI Powered Blog App</h3>
+            <div>
+              <p>
+                A dynamic blog application that leverages artificial
+                intelligence to assist content creation. It features a full
+                dashboard for managing blog posts and integrates the Google
+                Gemini API to automate and enhance the writing workflow.<br />
+                <strong>MERN stack</strong>
+              </p>
+            </div>
+          </div>
+          <div class="pr-container">
+            <a
+              href="https://quick-blog-gules-mu.vercel.app/"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="project-image-wrapper">
+                <img src="images/blog.png" alt="blog" />
+                <div class="project-overlay">
+                  <span class="project-overlay-icon">↗</span>
+                  <span class="project-overlay-text">View project</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> sabahabtamuu@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +251 93 710 8723</p>
+            <div class="social-icons">
+              <a href="https://github.com/sabahabtamu" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/saba-habtamu-65a03633a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="mailto:sabahabtamuu@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              <a href="https://t.me/Ur_daughter" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <a href="images/Saba_Habtamu_Resume.pdf" download class="btn">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2025 &copy; Saba Habtamu.</p>
+      </div>
+    </section>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById('sidemenu')
+
+      function openmenu(){
+        sidemenu.style.right = '0'
+      }
+
+      function closemenu(){
+        sidemenu.style.right = '-200px'
+      }
+
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxmgd0de3s33BWxHqKtH5nctzVRTO8kQPqVYjTaqqmF2RzFpAeCkbh0TxBjNbCbiRlq/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
