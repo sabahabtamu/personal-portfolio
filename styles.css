@@ -448,6 +448,7 @@ h2 {
   display: inline-block;
   background-color: #251c31;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .contact-right form {
   width: 100%;
