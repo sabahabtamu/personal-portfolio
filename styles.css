@@ -40,6 +40,7 @@ html{
 body {
   background: radial-gradient(circle at top left, #261043 0, #11071f 45%, #05010a 100%);
   color: #f9fafb;
+  overflow-x: hidden; /* prevent horizontal scroll / color peeking on edges */
 }
 body::before {
   content: "";
@@ -822,6 +823,7 @@ nav .fa-solid {
   }
   .nav-inner {
     padding: 12px 5%;
+    justify-content: space-between;
   }
   .header-text h1 {
     font-size: 32px;
@@ -834,14 +836,16 @@ nav .fa-solid {
     display: block;
   }
   nav ul {
+    display: block;
     background: rgba(116, 97, 139, 0.95);
     backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -260px; /* move fully off-screen so no colored edge shows */
+    width: 220px;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-left: 24px;
     z-index: 100;
     transition: right 0.5s;
   }
